@@ -15,6 +15,9 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import Image from "next/image";
+import logo from '@/app/assets/logo.png';
+
 
 interface SidebarLinkProps {
   href: string;
@@ -80,7 +83,13 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <div>logo</div>
+        <Image
+        src = {logo}
+        alt="sortify-logo"
+        width={27}
+        height={27}
+        
+        />
         <h1
           className={`${
             isSidebarCollapsed ? "hidden" : "block"
@@ -108,7 +117,7 @@ const Sidebar = () => {
         <SidebarLink
           href="/inventory"
           icon={Archive}
-          label="Iinventory"
+          label="Inventory"
           isCollapsed={isSidebarCollapsed}
         />
         <SidebarLink

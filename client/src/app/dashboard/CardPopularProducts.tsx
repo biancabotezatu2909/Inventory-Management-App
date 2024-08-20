@@ -15,9 +15,9 @@ const CardPopularProducts = () => {
         <div className="m-5"> Loading...</div>
     ): (
         <>
-        <h3 className="text-lg font-semobold px-7 pt-5 pb-2">
+        <h2 className="text-lg font-semibold mb-2 px-7 pt-5">
             Popular products
-        </h3>
+        </h2>
         <hr/>
         <div className="overflow-auto h-full">
             {
